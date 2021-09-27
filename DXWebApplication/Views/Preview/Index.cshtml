@@ -1,0 +1,10 @@
+﻿@model DevExpress.XtraReports.Web.CachedReportSourceWeb
+@Html.DevExpress().WebDocumentViewer(settings =>
+    {
+        settings.Name = "WebDocumentViewer";
+    }).Bind(Model).GetHtml()
+
+@*@Html.DevExpress().ReportDesigner(settings =>
+  {
+      settings.Name = "ReportDesigner";
+  }).Bind(new DXWebApplication.XtraReport1()).GetHtml()*@

@@ -1,0 +1,10 @@
+@*@model System.Collections.IEnumerable
+
+    @Html.Partial("GridViewPartialView", Model)
+    @Html.DevExpress().ReportDesigner(settings =>
+    {
+        settings.Name = "ReportDesigner";
+    }).Bind(new DXWebApplication.XtraReport1()).GetHtml()*@
+
+
+@Html.ActionLink("Report", "Index", "Preview",null, null)
