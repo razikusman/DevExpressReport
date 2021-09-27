@@ -6,7 +6,7 @@ using System.Drawing;
 using DevExpress.XtraReports.Parameters;
 using DevExpress.XtraReports.Expressions;
 
-namespace DXWebApplication.Reports.Sales_Report
+namespace DXWebApplication1.Sales_Report
 {
     public partial class SalesReport2 : DevExpress.XtraReports.UI.XtraReport
     {

@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
 
-namespace DXWebApplication.Reports.Sales_Report
+namespace DXWebApplication1.Sales_Report
 {
     public partial class Report : DevExpress.XtraReports.UI.XtraReport
     {
