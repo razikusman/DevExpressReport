@@ -11,6 +11,7 @@ namespace DXWebApplication.Models
         public XtraSaleCustomer()
         {
             InitializeComponent();
+            ///
         }
 
     }
