@@ -17,7 +17,7 @@ namespace DXWebApplication.Reports.AccountPayable
         {
             if(sender is XtraReport report)
             {
-                report.Parameters["@InvDocID"].Value = "38722";
+                report.Parameters["InvDocID"].Value = "38722";
             }
         }
     }

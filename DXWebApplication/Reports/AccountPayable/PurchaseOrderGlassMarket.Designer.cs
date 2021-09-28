@@ -490,7 +490,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // InvDocID
             // 
             this.InvDocID.AllowNull = true;
-            this.InvDocID.Description = "InvDocID";
+            this.InvDocID.Description = "Inv Doc ID";
             this.InvDocID.Name = "InvDocID";
             this.InvDocID.Type = typeof(int);
             this.InvDocID.Visible = false;
@@ -1332,7 +1332,7 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrCrossBandBox1});
             this.DataMember = "RptGetPODetails";
             this.DataSource = this.PurchaseOrderDB;
-            this.FilterString = "[InvDocID] = ?InvDocID";
+            this.FilterString = "[InvDocID] = ?InvDocID Or ?InvDocID Is Null";
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(34, 22, 111, 100);
