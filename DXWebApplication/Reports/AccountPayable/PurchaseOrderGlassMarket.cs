@@ -13,5 +13,12 @@ namespace DXWebApplication.Reports.AccountPayable
             InitializeComponent();
         }
 
+        private void Purchase_Order_BforPrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        {
+            if(sender is XtraReport report)
+            {
+                report.Parameters["@InvDocID"].Value = "38722";
+            }
+        }
     }
 }
