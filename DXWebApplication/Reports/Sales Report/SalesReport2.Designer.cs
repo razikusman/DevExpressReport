@@ -1,7 +1,7 @@
 ﻿
 using DevExpress.XtraReports.Parameters;
 
-namespace DXWebApplication.Reports.Sales_Report
+namespace DXWebApplication1.Sales_Report
 {
     partial class SalesReport2
     {
