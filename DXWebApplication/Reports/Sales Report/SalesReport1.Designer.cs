@@ -748,10 +748,10 @@ namespace DXWebApplication1.Sales_Report
             // 
             // CustomerID
             // 
-            this.CustomerID.Description = "CustomerID";
+            this.CustomerID.AllowNull = true;
+            this.CustomerID.Description = "Customer ID";
             this.CustomerID.Name = "CustomerID";
             this.CustomerID.Type = typeof(int);
-            this.CustomerID.ValueInfo = "0";
             dynamicListLookUpSettings1.DataMember = "Orders";
             dynamicListLookUpSettings1.DataSource = this.SalesDB;
             dynamicListLookUpSettings1.DisplayMember = "CustomerID";
@@ -798,6 +798,7 @@ namespace DXWebApplication1.Sales_Report
             this.ReportPrintOptions.DetailCountAtDesignTime = 3;
             this.SnapGridSize = 9.84252F;
             this.Version = "21.1";
+            this.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.Sales_PrintBefore);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
