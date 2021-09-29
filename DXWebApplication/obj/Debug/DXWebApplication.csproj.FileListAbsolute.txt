@@ -539,7 +539,6 @@ E:\spil\DevExpressReport\DXWebApplication\bin\ja\DevExpress.Spreadsheet.v21.1.Co
 E:\spil\DevExpressReport\DXWebApplication\bin\ru\DevExpress.Spreadsheet.v21.1.Core.resources.dll
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.Models.XtraSaleCustomer.resources
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.Properties.Resources.resources
-E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.Reports.AccountPayable.PurchaseOrder.resources
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication1.Sales_Report.Report.resources
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication1.Sales_Report.SalesReport2.resources
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication1.Sales_Report.SalesReport1.resources
@@ -552,3 +551,4 @@ E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.csproj.Copy
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.dll
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.pdb
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.csprojAssemblyReference.cache
+E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.Reports.AccountPayable.PurchaseOrder1.resources
