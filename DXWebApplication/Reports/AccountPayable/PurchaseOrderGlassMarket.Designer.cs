@@ -35,6 +35,7 @@ namespace DXWebApplication.Reports.AccountPayable
             DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery2 = new DevExpress.DataAccess.Sql.StoredProcQuery();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter2 = new DevExpress.DataAccess.Sql.QueryParameter();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PurchaseOrder));
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings1 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             this.PurchaseOrderDB = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
@@ -202,7 +203,6 @@ namespace DXWebApplication.Reports.AccountPayable
             // 
             this.TopMargin.HeightF = 111F;
             this.TopMargin.Name = "TopMargin";
-            this.TopMargin.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.Purchase_Order_BforPrint);
             // 
             // BottomMargin
             // 
@@ -489,11 +489,17 @@ namespace DXWebApplication.Reports.AccountPayable
             // 
             // InvDocID
             // 
-            this.InvDocID.AllowNull = true;
             this.InvDocID.Description = "Inv Doc ID";
             this.InvDocID.Name = "InvDocID";
             this.InvDocID.Type = typeof(int);
-            this.InvDocID.Visible = false;
+            this.InvDocID.ValueInfo = "38722";
+            dynamicListLookUpSettings1.DataMember = "RptGetPODetails";
+            dynamicListLookUpSettings1.DataSource = this.PurchaseOrderDB;
+            dynamicListLookUpSettings1.DisplayMember = "InvDocID";
+            dynamicListLookUpSettings1.FilterString = null;
+            dynamicListLookUpSettings1.SortMember = null;
+            dynamicListLookUpSettings1.ValueMember = "InvDocID";
+            this.InvDocID.ValueSourceSettings = dynamicListLookUpSettings1;
             // 
             // GroupFooter1
             // 
@@ -1332,7 +1338,7 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrCrossBandBox1});
             this.DataMember = "RptGetPODetails";
             this.DataSource = this.PurchaseOrderDB;
-            this.FilterString = "[InvDocID] = ?InvDocID Or ?InvDocID Is Null";
+            this.FilterString = "[InvDocID] = ?InvDocID";
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(34, 22, 111, 100);
