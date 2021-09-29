@@ -6,9 +6,9 @@ using System.Drawing;
 
 namespace DXWebApplication.Reports.AccountPayable
 {
-    public partial class PurchaseOrder : DevExpress.XtraReports.UI.XtraReport
+    public partial class PurchaseOrder1 : DevExpress.XtraReports.UI.XtraReport
     {
-        public PurchaseOrder()
+        public PurchaseOrder1()
         {
             InitializeComponent();
         }
