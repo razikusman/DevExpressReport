@@ -312,11 +312,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Reports\AccountPayable\PurchaseOrderGlassMarket.cs">
+    <Compile Include="Reports\AccountPayable\PurchaseOrderGlassMarket1.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\AccountPayable\PurchaseOrderGlassMarket.Designer.cs">
-      <DependentUpon>PurchaseOrderGlassMarket.cs</DependentUpon>
+    <Compile Include="Reports\AccountPayable\PurchaseOrderGlassMarket1.Designer.cs">
+      <DependentUpon>PurchaseOrderGlassMarket1.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Sales Report\Report.cs">
       <SubType>Component</SubType>
@@ -360,8 +360,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\AccountPayable\PurchaseOrderGlassMarket.resx">
-      <DependentUpon>PurchaseOrderGlassMarket.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\AccountPayable\PurchaseOrderGlassMarket1.resx">
+      <DependentUpon>PurchaseOrderGlassMarket1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Sales Report\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
