@@ -246,7 +246,7 @@ These are the standard terms and conditions that are referred to, and form part 
         ZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0cmVhbWVyAAAAAAIAAAAL
 </value>
   </data>
-  <data name="@Description1.Expression" xml:space="preserve">
+  <data name="Description1.Expression" xml:space="preserve">
     <value>Iif ([ItemType]=1 || [ItemType]=2,Iif ([bCustOwn]=true, [Description2]  + ' ('+ [TYPE_PRICE] +')' + ' - Customer Own',[Description2]  + ' ('+ [TYPE_PRICE] +')'),Iif([ItemType]=16, [Description2]  + ' ('+ [TYPE_PRICE] +')',[Description2]))</value>
   </data>
   <data name="xrRichText1.SerializableRtfString" xml:space="preserve">

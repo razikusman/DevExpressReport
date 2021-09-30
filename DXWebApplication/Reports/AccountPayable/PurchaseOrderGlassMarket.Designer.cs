@@ -129,10 +129,10 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrCrossBandBox1 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             this.xrCrossBandBox2 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             this.xrCrossBandBox3 = new DevExpress.XtraReports.UI.XRCrossBandBox();
-            this.@DeliverAddress = new DevExpress.XtraReports.UI.CalculatedField();
-            this.@Description1 = new DevExpress.XtraReports.UI.CalculatedField();
-            this.@Ediging = new DevExpress.XtraReports.UI.CalculatedField();
-            this.@SrvDesc = new DevExpress.XtraReports.UI.CalculatedField();
+            this.DeliverAddress = new DevExpress.XtraReports.UI.CalculatedField();
+            this.Description1 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.Ediging = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SrvDesc = new DevExpress.XtraReports.UI.CalculatedField();
             this.xrRichText1 = new DevExpress.XtraReports.UI.XRRichText();
             this.xrRichText2 = new DevExpress.XtraReports.UI.XRRichText();
             this.xrRichText3 = new DevExpress.XtraReports.UI.XRRichText();
@@ -166,15 +166,16 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrRichText18 = new DevExpress.XtraReports.UI.XRRichText();
             this.xrRichText13 = new DevExpress.XtraReports.UI.XRRichText();
             this.xrCrossBandBox5 = new DevExpress.XtraReports.UI.XRCrossBandBox();
-            this.@SupplierAddress1 = new DevExpress.XtraReports.UI.CalculatedField();
-            this.@SupplierAddress2 = new DevExpress.XtraReports.UI.CalculatedField();
-            this.@SupplierAddress3 = new DevExpress.XtraReports.UI.CalculatedField();
-            this.@LineQtyInSqm = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SupplierAddress1 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SupplierAddress2 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SupplierAddress3 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.LineQtyInSqm = new DevExpress.XtraReports.UI.CalculatedField();
             this.GroupHeader3 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.xrCrossBandBox4 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             this.xrCrossBandBox6 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             this.xrCrossBandBox9 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             this.xrCrossBandBox8 = new DevExpress.XtraReports.UI.XRCrossBandBox();
+            this.xrCrossBandBox10 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -274,7 +275,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // xrTableCell42
             // 
             this.xrTableCell42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[@SrvDesc]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SrvDesc]")});
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
             this.xrTableCell42.Text = "Description";
@@ -451,7 +452,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // xrTableCell10
             // 
             this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[@Description1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Description1]")});
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
             this.xrTableCell10.Text = "Description";
@@ -493,7 +494,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // xrTableCell14
             // 
             this.xrTableCell14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[@LineQtyInSqm]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[LineQtyInSqm]")});
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
@@ -548,7 +549,6 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrLabel4});
             this.GroupFooter1.Expanded = false;
             this.GroupFooter1.HeightF = 1773.607F;
-            this.GroupFooter1.Level = 1;
             this.GroupFooter1.Name = "GroupFooter1";
             this.GroupFooter1.Visible = false;
             // 
@@ -887,7 +887,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // xrLabel11
             // 
             this.xrLabel11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[@SupplierAddress3]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SupplierAddress3]")});
             this.xrLabel11.Font = new System.Drawing.Font("Arial Narrow", 10F);
             this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(341.3209F, 72.15056F);
             this.xrLabel11.Name = "xrLabel11";
@@ -898,7 +898,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // xrLabel10
             // 
             this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[@SupplierAddress2]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SupplierAddress2]")});
             this.xrLabel10.Font = new System.Drawing.Font("Arial Narrow", 10F);
             this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(341.321F, 56.04528F);
             this.xrLabel10.Name = "xrLabel10";
@@ -909,7 +909,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // xrLabel9
             // 
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[@SupplierAddress1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SupplierAddress1]")});
             this.xrLabel9.Font = new System.Drawing.Font("Arial Narrow", 10F);
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(341.3212F, 39.93998F);
             this.xrLabel9.Name = "xrLabel9";
@@ -989,7 +989,7 @@ namespace DXWebApplication.Reports.AccountPayable
             // xrLabel33
             // 
             this.xrLabel33.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[@DeliverAddress]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DeliverAddress]")});
             this.xrLabel33.Font = new System.Drawing.Font("Arial", 10F);
             this.xrLabel33.LocationFloat = new DevExpress.Utils.PointFloat(152.5051F, 46.89677F);
             this.xrLabel33.Name = "xrLabel33";
@@ -1192,32 +1192,32 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(781.2274F, 0F);
             this.xrCrossBandBox3.WidthF = 333.7726F;
             // 
-            // @DeliverAddress
+            // DeliverAddress
             // 
-            this.@DeliverAddress.DataMember = "RptGetPODetails";
-            this.@DeliverAddress.Expression = "[DeliveryAddress1] + \', \' + [DeliveryAddress2] + \' \' + [DeliveryAddress4] + \' \' +" +
+            this.DeliverAddress.DataMember = "RptGetPODetails";
+            this.DeliverAddress.Expression = "[DeliveryAddress1] + \', \' + [DeliveryAddress2] + \' \' + [DeliveryAddress4] + \' \' +" +
     " [DeliveryAddress5] + \' \' +  [DeliveryPC]";
-            this.@DeliverAddress.Name = "@DeliverAddress";
+            this.DeliverAddress.Name = "DeliverAddress";
             // 
-            // @Description1
+            // Description1
             // 
-            this.@Description1.DataMember = "RptGetPODetails";
-            this.@Description1.Expression = resources.GetString("@Description1.Expression");
-            this.@Description1.Name = "@Description1";
+            this.Description1.DataMember = "RptGetPODetails";
+            this.Description1.Expression = resources.GetString("Description1.Expression");
+            this.Description1.Name = "Description1";
             // 
-            // @Ediging
+            // Ediging
             // 
-            this.@Ediging.DataMember = "RptGetPODetails";
-            this.@Ediging.Expression = "Iif ([Measure]=1,[SRVPRICE_DESCRIPTION],Iif ([Measure]=2,\'\',Iif( [Measure]=3 ,[SR" +
+            this.Ediging.DataMember = "RptGetPODetails";
+            this.Ediging.Expression = "Iif ([Measure]=1,[SRVPRICE_DESCRIPTION],Iif ([Measure]=2,\'\',Iif( [Measure]=3 ,[SR" +
     "VPRICE_DESCRIPTION],\'\')))";
-            this.@Ediging.Name = "@Ediging";
+            this.Ediging.Name = "Ediging";
             // 
-            // @SrvDesc
+            // SrvDesc
             // 
-            this.@SrvDesc.DataMember = "RptGetPODetails";
-            this.@SrvDesc.Expression = "Iif ([LineNote1]=\'\', Iif ([@Ediging]=\'\',[Description1],[Description1] + \' - \' + [" +
+            this.SrvDesc.DataMember = "RptGetPODetails";
+            this.SrvDesc.Expression = "Iif ([LineNote1]=\'\', Iif ([@Ediging]=\'\',[Description1],[Description1] + \' - \' + [" +
     "@Ediging]) , Iif( [@Ediging]=\'\' ,[LineNote], [LineNote1] + \' - \' + [@Ediging]))";
-            this.@SrvDesc.Name = "@SrvDesc";
+            this.SrvDesc.Name = "SrvDesc";
             // 
             // xrRichText1
             // 
@@ -1500,6 +1500,7 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrRichText2,
             this.xrRichText1});
             this.GroupFooter2.HeightF = 185.0417F;
+            this.GroupFooter2.Level = 1;
             this.GroupFooter2.Name = "GroupFooter2";
             // 
             // xrRichText14
@@ -1566,30 +1567,30 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrCrossBandBox5.StartPointFloat = new DevExpress.Utils.PointFloat(0.0001220703F, 0F);
             this.xrCrossBandBox5.WidthF = 532.3824F;
             // 
-            // @SupplierAddress1
+            // SupplierAddress1
             // 
-            this.@SupplierAddress1.DataMember = "RptGetPODetails";
-            this.@SupplierAddress1.Expression = "Iif  ([SupplierAddress2]=\'\',[SupplierAddress1] + \', \' + [SupplierAddress2],[Suppl" +
+            this.SupplierAddress1.DataMember = "RptGetPODetails";
+            this.SupplierAddress1.Expression = "Iif  ([SupplierAddress2]=\'\',[SupplierAddress1] + \', \' + [SupplierAddress2],[Suppl" +
     "ierAddress1] + \', \' + [SupplierAddress2] + \',\')";
-            this.@SupplierAddress1.Name = "@SupplierAddress1";
+            this.SupplierAddress1.Name = "SupplierAddress1";
             // 
-            // @SupplierAddress2
+            // SupplierAddress2
             // 
-            this.@SupplierAddress2.DataMember = "RptGetPODetails";
-            this.@SupplierAddress2.Expression = "Iif ([SupplierAddress4]=\'\' ,\'\' ,[SupplierAddress4] + \',\')";
-            this.@SupplierAddress2.Name = "@SupplierAddress2";
+            this.SupplierAddress2.DataMember = "RptGetPODetails";
+            this.SupplierAddress2.Expression = "Iif ([SupplierAddress4]=\'\' ,\'\' ,[SupplierAddress4] + \',\')";
+            this.SupplierAddress2.Name = "SupplierAddress2";
             // 
-            // @SupplierAddress3
+            // SupplierAddress3
             // 
-            this.@SupplierAddress3.DataMember = "RptGetPODetails";
-            this.@SupplierAddress3.Expression = "[DeliveryAddress5] + \' \' + [DeliveryPC] + \'.\'";
-            this.@SupplierAddress3.Name = "@SupplierAddress3";
+            this.SupplierAddress3.DataMember = "RptGetPODetails";
+            this.SupplierAddress3.Expression = "[DeliveryAddress5] + \' \' + [DeliveryPC] + \'.\'";
+            this.SupplierAddress3.Name = "SupplierAddress3";
             // 
-            // @LineQtyInSqm
+            // LineQtyInSqm
             // 
-            this.@LineQtyInSqm.DataMember = "RptGetPODetails";
-            this.@LineQtyInSqm.Expression = "Iif ([ItemType]=1 or [Measure]=1 ,[LineQtyInVolume],0)";
-            this.@LineQtyInSqm.Name = "@LineQtyInSqm";
+            this.LineQtyInSqm.DataMember = "RptGetPODetails";
+            this.LineQtyInSqm.Expression = "Iif ([ItemType]=1 or [Measure]=1 ,[LineQtyInVolume],0)";
+            this.LineQtyInSqm.Name = "LineQtyInSqm";
             // 
             // GroupHeader3
             // 
@@ -1645,6 +1646,18 @@ namespace DXWebApplication.Reports.AccountPayable
             this.xrCrossBandBox8.StartPointFloat = new DevExpress.Utils.PointFloat(7.152557E-05F, 154.8642F);
             this.xrCrossBandBox8.WidthF = 1113.083F;
             // 
+            // xrCrossBandBox10
+            // 
+            this.xrCrossBandBox10.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
+            this.xrCrossBandBox10.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrCrossBandBox10.BorderWidth = 1F;
+            this.xrCrossBandBox10.EndBand = this.GroupHeader1;
+            this.xrCrossBandBox10.EndPointFloat = new DevExpress.Utils.PointFloat(780.1858F, 46.29167F);
+            this.xrCrossBandBox10.Name = "xrCrossBandBox10";
+            this.xrCrossBandBox10.StartBand = this.GroupHeader1;
+            this.xrCrossBandBox10.StartPointFloat = new DevExpress.Utils.PointFloat(780.1858F, 0F);
+            this.xrCrossBandBox10.WidthF = 336.8558F;
+            // 
             // PurchaseOrder1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1657,17 +1670,18 @@ namespace DXWebApplication.Reports.AccountPayable
             this.GroupFooter2,
             this.GroupHeader3});
             this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
-            this.@DeliverAddress,
-            this.@Description1,
-            this.@Ediging,
-            this.@SrvDesc,
-            this.@SupplierAddress1,
-            this.@SupplierAddress2,
-            this.@SupplierAddress3,
-            this.@LineQtyInSqm});
+            this.DeliverAddress,
+            this.Description1,
+            this.Ediging,
+            this.SrvDesc,
+            this.SupplierAddress1,
+            this.SupplierAddress2,
+            this.SupplierAddress3,
+            this.LineQtyInSqm});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.PurchaseOrderDB});
             this.CrossBandControls.AddRange(new DevExpress.XtraReports.UI.XRCrossBandControl[] {
+            this.xrCrossBandBox10,
             this.xrCrossBandBox8,
             this.xrCrossBandBox9,
             this.xrCrossBandBox6,
@@ -1863,5 +1877,6 @@ namespace DXWebApplication.Reports.AccountPayable
         private DevExpress.XtraReports.UI.XRCrossBandBox xrCrossBandBox6;
         private DevExpress.XtraReports.UI.XRCrossBandBox xrCrossBandBox9;
         private DevExpress.XtraReports.UI.XRCrossBandBox xrCrossBandBox8;
+        private DevExpress.XtraReports.UI.XRCrossBandBox xrCrossBandBox10;
     }
 }

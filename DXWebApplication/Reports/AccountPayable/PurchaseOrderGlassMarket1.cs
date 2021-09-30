@@ -11,6 +11,8 @@ namespace DXWebApplication.Reports.AccountPayable
         public PurchaseOrder()
         {
             InitializeComponent();
+            PurchaseOrder report = new PurchaseOrder();;
+            report.DataSource = "";
         }
 
         
