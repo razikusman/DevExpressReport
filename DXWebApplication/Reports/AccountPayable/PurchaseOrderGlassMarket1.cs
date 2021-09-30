@@ -6,11 +6,13 @@ using System.Drawing;
 
 namespace DXWebApplication.Reports.AccountPayable
 {
-    public partial class PurchaseOrder1 : DevExpress.XtraReports.UI.XtraReport
+    public partial class PurchaseOrder : DevExpress.XtraReports.UI.XtraReport
     {
-        public PurchaseOrder1()
+        public PurchaseOrder()
         {
             InitializeComponent();
+            PurchaseOrder report = new PurchaseOrder();;
+            report.DataSource = "";
         }
 
         
