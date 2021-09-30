@@ -552,3 +552,4 @@ E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.dll
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.pdb
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.csprojAssemblyReference.cache
 E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.Reports.AccountPayable.PurchaseOrder1.resources
+E:\spil\DevExpressReport\DXWebApplication\obj\Debug\DXWebApplication.Reports.AccountPayable.PurchaseOrder.resources
